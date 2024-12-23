@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Navbar from "./Navbar";
 import Cards from "./Cards/Cards";
 import Footer from "./Footer/Footer";
 import bgimg from "../assets/bgimg.png";

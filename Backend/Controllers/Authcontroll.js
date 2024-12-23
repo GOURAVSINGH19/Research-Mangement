@@ -82,7 +82,6 @@ module.exports.forgotPassword = async (req, res) => {
 
 module.exports.resetPassword = async (req, res) => {
   const { resetToken, newPassword } = req.body;
-  console.log(resetToken, newPassword);
   try {
     const user = await UserModel.findOne({
       resetPasswordToken: resetToken,

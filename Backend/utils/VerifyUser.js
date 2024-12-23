@@ -66,7 +66,6 @@ const VerifyUser = async (email, subject, data, token) => {
   await transporter.sendMail(mailOptions, (err) => {
     if (err) console.log(err);
     else console.log("Email sent successfully");
-    console.log(data);
   });
 };
 

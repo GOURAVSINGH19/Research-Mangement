@@ -56,7 +56,6 @@ const Navbar = () => {
   const getsearch = async () => {
     try {
       const response = await axios.get("http://localhost:8000/info/Uploader");
-      console.log(response.data);
       const filteredUsers = response.data.filter(
         (user) =>
           user.username.toLowerCase().includes(search.toLowerCase()) ||

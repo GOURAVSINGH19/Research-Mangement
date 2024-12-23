@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import video from "../../assets/7btrrd.mp4";
 import Dropdown from "../Dropdown/Dropdown";
 import axios from "axios";
 import defaultimg from "../../assets/largepreview.png";
@@ -50,15 +49,7 @@ const Cards = () => {
 
   return (
     <div className="w-full h-full relative">
-      <div className="w-[100%] relative bg-zinc-900">
-        <video
-          src={video}
-          className="object-cover w-screen min-h-screen"
-          muted
-          loop
-          autoPlay
-        />
-      </div>
+      <div className="w-[100%] relative bg-zinc-900"></div>
       <div className="w-full h-full absolute top-0 bg-[rgba(16 18 27 / 40%)] backdrop-blur-[20px] overflow-hidden">
         <div className="md:max-w-screen-2xl py-2 px-4 mx-auto flex justify-between items-center">
           <span className="text-2xl font-serif">
@@ -67,7 +58,7 @@ const Cards = () => {
           <span>
             <Dropdown
               title="Category"
-              options={["ALL" , "ONGOING", "PAST"]}
+              options={["ALL", "ONGOING", "PAST"]}
               func={(e) => setCategory(e.target.value)}
             />
           </span>
